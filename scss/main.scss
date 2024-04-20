@@ -1,0 +1,21 @@
+@import './reset';
+@import './variables';
+
+@function weight($weight-name){
+    @return map-get($map: font-weight, $key: $weight-name )
+}
+
+body{
+    background: $primary-color;
+    color: $text-color;
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+
+    p{
+    font-weight: weight(regular);
+    }
+background-color: #fff;
+color: black;
+}
